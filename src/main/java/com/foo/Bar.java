@@ -8,12 +8,19 @@ import org.apache.logging.log4j.Logger;
  */
 
 public class Bar {
+
+    // logger的name为Bar.class.getName()，即com.foo.Bar
     static final Logger logger = LogManager.getLogger(Bar.class.getName());
 
     public boolean doIt() {
-        logger.entry();
+
+        logger.trace("Enter");    // 等价于 logger.entry(); entry()方法已经废弃
+        logger.debug("Debug");
+        logger.warn("Warn");
+        logger.info("Info");
         logger.error("Did it again!");
-        return logger.exit(false);
+        logger.trace("Exit");
+        return false;
     }
 
 

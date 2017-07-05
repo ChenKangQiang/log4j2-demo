@@ -15,11 +15,14 @@ public class MyApp {
 
         // Set up a simple configuration that logs on the console.
 
+        // MyAPP 自动继承 root logger, 故其level为error，不会打印trace
         logger.trace("Entering application.");
+
         Bar bar = new Bar();
         if (!bar.doIt()) {
             logger.error("Didn't do it.");
         }
+
         logger.trace("Exiting application.");
     }
 }

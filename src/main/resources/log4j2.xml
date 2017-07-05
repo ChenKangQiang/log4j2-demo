@@ -6,7 +6,8 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="com.foo.Bar" level="trace">
+        <!--additivity="false"可以防止打印两遍-->
+        <Logger name="com.foo.Bar" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
         <Root level="error">
