@@ -22,7 +22,6 @@ release.properties
 *.iml
 *.ipr
 *.iws
-.idea/
 out/
 
 # Mac
