@@ -20,10 +20,10 @@ release.properties
 
 # IntelliJ
 *.iml
+/.idea/
 *.ipr
 *.iws
 out/
 
 # Mac
 .DS_Store
-/.idea/
