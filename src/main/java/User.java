@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j2;
 /**
  * Created by chen on 2017/7/5.
  */
+
 @Data
 @Log4j2
 public class User {
